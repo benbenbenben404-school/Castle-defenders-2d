@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Pathfinding/PathGetter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Spritesheet/spritesheet_characters.png" type="Texture" id=2]
+[ext_resource path="res://Units/Zombie.gd" type="Script" id=4]
+
+[node name="Zombie" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 426.682, -0.630586, 33.4132, 44.4652 )
+
+[node name="PathTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="PathGetter" parent="." instance=ExtResource( 1 )]
+[connection signal="timeout" from="PathTimer" to="." method="_on_Timer_timeout"]

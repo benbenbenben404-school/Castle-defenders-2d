@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9cW/uj0JnEbv27rUiokAv8MuAso9/+fttsWdDhLjk22xzNMrEoJMGXGdabIIQjnNVZFCgnHnEc5q1RqsaaMCSQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ben\\Documents\\Castle defenders 2d\\Castle defenders 2d.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ben\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\Ben\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,8 @@
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\obj\Debug\Castle defenders 2d.csprojAssemblyReference.cache
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\obj\Debug\Castle defenders 2d.csproj.CoreCompileInputs.cache
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\obj\Debug\Castle defenders 2d.AssemblyInfoInputs.cache
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\obj\Debug\Castle defenders 2d.AssemblyInfo.cs
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\bin\Debug\Castle defenders 2d.dll
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\bin\Debug\Castle defenders 2d.pdb
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\obj\Debug\Castle defenders 2d.dll
+C:\Users\Ben\Documents\Castle defenders 2d\.mono\temp\obj\Debug\Castle defenders 2d.pdb
