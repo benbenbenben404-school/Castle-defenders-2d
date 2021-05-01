@@ -55,7 +55,7 @@ public class GrassGen : TileMap
 				//grass_tiles.Add(tile);
 				if (worldGenLines.distance_to_lines(world_pos)<worldGenLines.get_width(world_pos)){
 				
-					SetCellv(tile,0);
+					SetCellv(tile,1);
 				}
 
 			}
