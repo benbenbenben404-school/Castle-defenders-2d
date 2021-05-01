@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/towerDefense_tilesheet@2.png-f1b223f36f4fe9df68285b46de083c24.stex"
+path="res://.import/towerDefense_tilesheet@2.png-d78fcbb121165e9fc48988b14ce337a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tilesheet/towerDefense_tilesheet@2.png"
-dest_files=[ "res://.import/towerDefense_tilesheet@2.png-f1b223f36f4fe9df68285b46de083c24.stex" ]
+source_file="res://castle/assets/Tilesheet/towerDefense_tilesheet@2.png"
+dest_files=[ "res://.import/towerDefense_tilesheet@2.png-d78fcbb121165e9fc48988b14ce337a8.stex" ]
 
 [params]
 
