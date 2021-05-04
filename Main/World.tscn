@@ -41,7 +41,7 @@ points = PoolVector2Array( 24, 24, 0, 24, 0, 0, 24, 0 )
 
 [sub_resource type="Shader" id=9]
 code = "shader_type canvas_item;
-
+//render_mode blend_mul;
 
 uniform sampler2D stone_texture;
 uniform vec2 tex_size;
@@ -69,7 +69,7 @@ void fragment() {
     }
 	if (num_of_blanks!=0.0){
 		vec2 grid = grid(UV);
-		COLOR = vec4(texture(stone_texture, grid).rgb,num_of_blanks/100.0);
+		COLOR = vec4(texture(stone_texture, grid).rgb,num_of_blanks/121.0);
 		//COLOR = vec4(grid.rgr,num_of_blanks/100.0);
 
 
@@ -148,6 +148,7 @@ margin_left = -12000.0
 margin_top = -12000.0
 margin_right = 12000.0
 margin_bottom = 12000.0
+color = Color( 1, 1, 1, 0 )
 script = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
