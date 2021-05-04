@@ -10,7 +10,7 @@ func _ready() -> void:
 	$Sprite.material.set_shader_param("maxHealth",max_health)
 	$Sprite.material.set_shader_param("health",health)
 func change_texture(texture_pos):
-	$Sprite.region_rect=Rect2(texture_pos.x*64,texture_pos.y*64+640,64,64)
+	$Sprite.region_rect=Rect2(texture_pos.x*24,texture_pos.y*24,24,24)
 
 func die():
 	emit_signal("die",position,self)

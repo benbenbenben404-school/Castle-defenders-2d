@@ -8,7 +8,7 @@ public class AstarManager : Node
 	[Export]
 	private NodePath wall_tile_map;
 	[Export]
-	private int wall_cost = 10;
+	private int wall_cost = 1000;
 	[Export]	
 	private Vector2 map_size= new Vector2(100,100);
 
@@ -21,7 +21,7 @@ public class AstarManager : Node
 	public override void _Ready() {
 		astar_node = new AStar();
 		
-		var walkable_cells= (GetNode(terrain_tile_map) as TileMap).GetUsedCellsById(0);
+		var walkable_cells= (GetNode(terrain_tile_map) as TileMap).GetUsedCellsById(1);
 		astar_add_walkable_cells(walkable_cells);
 		astar_connect_walkable_cells(walkable_cells);
 		var walls = (GetNode(wall_tile_map) as TileMap).GetUsedCellsById(0 );

@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource( 1 )
-node_sepration_vertical = 1200
-node_sepration_horizontal = 1500
+node_sepration_vertical = 30
+node_sepration_horizontal = 32

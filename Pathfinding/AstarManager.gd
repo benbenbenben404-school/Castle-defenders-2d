@@ -13,7 +13,7 @@ var end_pos
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var walkable_cells= get_node(terrain_tile_map).get_used_cells_by_id(0)
+	var walkable_cells= get_node(terrain_tile_map).get_used_cells_by_id(1)
 	astar_add_walkable_cells(walkable_cells)
 	astar_connect_walkable_cells(walkable_cells)
 	var walls = get_node(wall_tile_map).get_used_cells_by_id(0)
@@ -32,6 +32,9 @@ func edit_astar_connection_weight(cell,weight):
 	
 	
 func calculate_point_index(point):
+	print(point)
+	point +=map_size/2
+	print(point)
 	return (point.x+10000) + map_size.x * (point.y+10000)
 
 
@@ -71,7 +74,8 @@ func calculate_path(start_pos, end_pos):
 
 	var start_point_index = astar_node.get_closest_point(Vector3(start_pos.x,start_pos.y,0))
 	var end_point_index =astar_node.get_closest_point(Vector3(end_pos.x,end_pos.y,0))
-
+	print(start_point_index)
+	print(end_point_index)
 
 
 	var point_path_ids = astar_node.get_point_path(start_point_index, end_point_index)

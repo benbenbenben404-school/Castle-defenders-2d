@@ -17,7 +17,7 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	if Input.is_action_pressed("ui_home"):
+	if Input.is_action_pressed("left_click"):
 		create_tile(get_global_mouse_position())
 func get_grass_tiles():
 	var grass_map = get_node(grass_tile_map)
@@ -64,7 +64,7 @@ func create_tile(tile_pos_world):
 #In the next vesion of godot this will hopefully be much simpler
 func create_entity(wall_pos,texture_pos):
 	var created_wall = wall_entity.instance()
-	created_wall.position = wall_pos +Vector2(32,32)
+	created_wall.position = wall_pos +Global.TILE_SIZEV/2
 	created_wall.texture_pos = texture_pos
 	add_child(created_wall)
 	created_wall.change_texture(texture_pos)
@@ -85,7 +85,7 @@ func update_autotile_textures(tile_pos_world):
 				entity_registry[tile_world].change_texture(cell_autotile_coord)
 
 func on_wall_destroy(position,wall):
-	position=position-Vector2(32,32)
+	position=position-Global.TILE_SIZEV/2
 	tiles.erase(position)
 	entity_registry.erase(position)
 	var wall_map = world_to_map(position)

@@ -1,8 +1,8 @@
 using Godot;
 using System;
 using System.Collections;
-
-
+using System.Collections.Generic;
+using static Godot.GD;
 
 
 public class WorldGenLines:Resource {
@@ -36,23 +36,25 @@ public class WorldGenLines:Resource {
 			this.depth=depth;
 		}
 	};
-	public ArrayList  points=new ArrayList();
-	public ArrayList lines=new ArrayList();
-
+	public static int tree_depth =15;
+	public List<Line> lines=new List<Line>();
+	static int num_of_points= (tree_depth+1)*(tree_depth+2)/2;
+	public List<Point> points = new List<Point>();
+		
 
 	Vector2 root_pos = new Vector2(0,0);
 
-	public static int tree_depth =15;
+	static int TILE_SIZE = 24;
 
 	[Export]
-	int node_sepration_vertical =1200;
+	int node_sepration_vertical =30;
 
 	[Export]
-	int node_sepration_horizontal =1500;
+	int node_sepration_horizontal =32;
 
-	int random_factor=600;
+	int random_factor=200;
 	float connection_threshold=0.7F;
-	float width_mutliplier =300.0F;
+	float width_mutliplier =7.0F;
 	float width_range = 0.4F;
 	int start_pos;
 	int end_pos;
@@ -62,23 +64,22 @@ public class WorldGenLines:Resource {
 
 	public WorldGenLines() {
 
-		
-		
+	
 		GD.Print(tree_depth);
 		GD.Seed((ulong)106);
 		//Generate the points
 		for (int level=0; level<tree_depth+1; level++){
 
-			float node_y = level *node_sepration_vertical;
+			float node_y = level *node_sepration_vertical*TILE_SIZE;
 			foreach(int i in GD.Range(level+1)){
-				float width =(float) GD.RandRange(width_range*width_mutliplier,width_mutliplier);
-				float node_x = (float)(-level/2.0 *node_sepration_horizontal+i*node_sepration_horizontal);
-				Vector2 node_pos = new Vector2(node_x,node_y)+new Vector2(GD.Randf()-0.5F,GD.Randf()-0.5F )*random_factor;
+				float width =(float) GD.RandRange(width_range*width_mutliplier*TILE_SIZE,width_mutliplier*TILE_SIZE);
+				float node_x = (float)((-level/2.0 *node_sepration_horizontal+i*node_sepration_horizontal)*TILE_SIZE);
+				Vector2 node_pos = new Vector2(node_x,node_y)+new Vector2(random_factor,random_factor)*(GD.Randf()-0.5F);
 				Point new_point = new Point(node_pos,level,i,width);
 				//GD.Print(points.IsFixedSize);
 
 				points.Add(new_point);
-				GD.Print(node_pos);
+
 			}		
 		}
 
@@ -95,7 +96,7 @@ public class WorldGenLines:Resource {
 				var end_width = end_point.width;
 				
 
-				lines.Add( new Line(start_pos,end_pos,level,start_width,end_width,end_point.position_in_level));
+				lines.Add(new Line(start_pos,end_pos,level,start_width,end_width,end_point.position_in_level));
 
 				
 
@@ -103,7 +104,7 @@ public class WorldGenLines:Resource {
 				end_pos=end_point.position;
 				end_width = end_point.width;
 			
-				lines.Add( new Line(start_pos,end_pos,level,start_width,end_width,end_point.position_in_level));
+				lines.Add(new Line(start_pos,end_pos,level,start_width,end_width,end_point.position_in_level));
 				
 			}
 		}
