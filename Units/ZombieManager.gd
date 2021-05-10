@@ -5,7 +5,7 @@ export(NodePath) var pathFindingNode
 var pathFinder
 var endPos = Vector2.ZERO
 onready var zombie_spawns = get_node("Zombie spawns")
-var spawns = []
+var spawns = [""]
 var zombie = preload("Zombie.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

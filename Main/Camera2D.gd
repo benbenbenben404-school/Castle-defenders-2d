@@ -25,8 +25,11 @@ func _physics_process(delta: float) -> void:
 	position+=move_vector*move_speed*delta*pow((zoom.x+1),2)
 
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event.is_action("scroll_down"):
 		zoom=zoom*1.1
 	if event.is_action("scroll_up"):
 		zoom=zoom*0.9
+	if zoom.length() >50:
+		zoom = Vector2(30,30)
+	Global.change_zoom(zoom)

@@ -48,7 +48,7 @@ public class World : Node2D
 				var tile = new Vector2(chunk_pos.x*chunk_size.x+x-350,chunk_pos.y*chunk_size.y+y);
 				//GD.Print(tile);
 				var world_pos=grassTileMap.MapToWorld(tile);
-				if (worldGenLines.distance_to_lines(world_pos)<worldGenLines.get_width(world_pos)){
+				if (worldGenLines.distance_to_lines(world_pos)<worldGenLines.get_width_point(world_pos)){
 					grassTileMap.SetCellv(tile,0);
 				}
 

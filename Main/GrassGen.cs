@@ -43,7 +43,7 @@ public class GrassGen : TileMap
 		
 	}
 	public void gen_chunk(Vector2 chunk_pos,Vector2 chunk_size,Vector2 chunk_offset){
-		GD.Print("start");
+
 
 		for (int x=0; x<chunk_size.x;x++){
 			for (int y=0; y<chunk_size.y;y++){
@@ -53,7 +53,7 @@ public class GrassGen : TileMap
 				
 				//SetCellv(tile,0);
 				//grass_tiles.Add(tile);
-				if (worldGenLines.distance_to_lines(world_pos)<worldGenLines.get_width(world_pos)){
+				if (worldGenLines.distance_to_lines(world_pos)<worldGenLines.get_width_point(world_pos)){
 				
 					SetCellv(tile,1);
 				}
