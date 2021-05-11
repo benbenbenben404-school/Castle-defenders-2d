@@ -34,21 +34,27 @@ public class Zombie : Node2D
 	public void tick(){
 		float dist_on_line=worldGenLines.distance_on_line(line,Position);
 		if (dist_on_line >0.99){
-			line = worldGenLines.get_parent_lines(line)[r.Next(worldGenLines.get_parent_lines(line).Count)];
+
+			if (line.left_parent_index !=-1 &&line.right_parent_index!=-1){
+				line = worldGenLines.get_parent_lines(line)[r.Next(worldGenLines.get_parent_lines(line).Count)];
+			} else if (line.left_parent_index !=-1 || line.right_parent_index!=-1){
+				line = worldGenLines.get_parent_lines(line)[0];
+			}
+
 			vel = (line.start_pos-line.end_pos).Normalized();
 			
 			Rotation = vel.Angle();
 			perp_vel = new Vector2(vel.y,-vel.x);
 		} 
 		var closest_point_on_line=worldGenLines.get_closest_point_on_line(line, Position);
-		
-		Position = closest_point_on_line +vel*speed+get_width_offset(line);
+		Vector2 desired_pos = closest_point_on_line +vel+get_width_offset(line);
+		Position = (desired_pos-Position).Normalized() *speed+Position;
 		
 	}
 	
 	public Vector2 get_width_offset(Line line){
 		var width_at_point = worldGenLines.get_width(line,Position);
-		var width_offset = width_at_point*width_ratio;
+		var width_offset = width_at_point*width_ratio*0.8F;
 
 		return width_offset*perp_vel;
 	}

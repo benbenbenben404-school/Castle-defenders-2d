@@ -14,6 +14,8 @@ public class WorldGenLines:Resource {
 		public float end_width;
 		public int position_in_level;
 		public int line_index;
+		public int left_parent_index;
+		public int right_parent_index;
 		public Line(Vector2 start_pos, Vector2 end_pos,int depth,float start_width,float end_width,int position_in_level,int line_index)
 		{
 			this.line_index=line_index;
@@ -23,6 +25,8 @@ public class WorldGenLines:Resource {
 			this.start_width=start_width;
 			this.end_width=end_width;
 			this.position_in_level= position_in_level;
+			this.left_parent_index= -1;
+			this.right_parent_index= -1;
 		}
 	};
 	public struct  Point {
@@ -68,9 +72,6 @@ public class WorldGenLines:Resource {
 
 
 	public WorldGenLines() {
-
-	
-		GD.Print(tree_depth);
 		GD.Randomize();
 		//GD.Seed((ulong)99);
 		//Generate the points
@@ -82,7 +83,6 @@ public class WorldGenLines:Resource {
 				float node_x = (float)((-level/2.0 *node_sepration_horizontal+i*node_sepration_horizontal)*TILE_SIZE);
 				Vector2 node_pos = new Vector2(node_x,node_y)+new Vector2(random_factor,random_factor)*(GD.Randf()-0.5F);
 				Point new_point = new Point(node_pos,level,i,width);
-				//GD.Print(points.IsFixedSize);
 
 				points.Add(new_point);
 				if (level == tree_depth) {
@@ -106,7 +106,7 @@ public class WorldGenLines:Resource {
 				var leftLineIndex = point_index;
 				var leftLine =  new Line(start_pos,end_pos,level,start_width,end_width,end_point.position_in_level,leftLineIndex);
 				lines.Add(leftLine);
-				line_map.Add(leftLineIndex);
+
 				
 
 				end_point = (Point)points[point_index+level+2];
@@ -115,7 +115,7 @@ public class WorldGenLines:Resource {
 				var righgtLineIndex = point_index+1;
 				var rightLine = new Line(start_pos,end_pos,level,start_width,end_width,end_point.position_in_level,righgtLineIndex);
 				lines.Add(rightLine);
-				line_map.Add(righgtLineIndex);
+
 				if (level == tree_depth-1) {
 					end_lines.Add(leftLine);
 					end_lines.Add(rightLine);
@@ -134,10 +134,43 @@ public class WorldGenLines:Resource {
 			} 
 		}
 		foreach (Line line in linesRemove){
-				line_map.Remove(lines.IndexOf(line));
-				lines.Remove(line);
-				
+
+			if (end_lines.Contains(line)){
+				end_lines.Remove(line);
+			}
+			lines.Remove(line);
 			
+			
+		}
+		
+		// generate parent lines
+		for (int j=0; j<lines.Count; j++){
+			
+			Vector2 start_pos = lines[j].start_pos;
+			foreach (int i in GD.Range(lines.Count)){
+				if ((lines[i].end_pos - start_pos).Length() <1){
+					//check if line is left parent or right parent
+
+					var new_line = lines[j];
+
+					if (lines[i].start_pos.x>start_pos.x){
+						
+						new_line.right_parent_index = i;
+					
+					} else {
+						new_line.left_parent_index = i;
+					}
+					if (end_lines.Contains(lines[j])){
+						end_lines.Remove(lines[j]);
+						end_lines.Add(new_line);
+					}
+					 lines[j] = new_line;
+
+				}
+
+			}
+
+
 		}
 	}
 	public float Distance(Vector2 start,Vector2 end,Vector2 point){
@@ -266,13 +299,10 @@ public class WorldGenLines:Resource {
 		float start_dist = closest_point.DistanceTo(start_point)+0;
 		float end_dist = closest_point.DistanceTo(end_point)+0;
 		float total_dist= end_point.DistanceTo(start_point)+0;
-		//GD.Print(start_dist);
-		//GD.Print(end_dist);
-		//GD.Print(total_dist);
+
 
 		float width = (1-start_dist/total_dist)*current_line.start_width+(1-end_dist/total_dist)*current_line.end_width;
-		//GD.Print(width);
-		//GD.Print("");
+
 		return width;
 	} 
 	public List<Point> get_end_points(){
@@ -283,19 +313,13 @@ public class WorldGenLines:Resource {
 	}
 	
 	public List<Line>  get_parent_lines(Line line){
-		GD.Print(lines.Count);
-		GD.Print(line_map.Count);
-		int line_index = line.line_index;
-		int level = line.depth;
-		int node = line.position_in_level;
-		int leftParentIndex = line_map.IndexOf(line_index-level+node*2);
-		int rightParentIndex = line_map.IndexOf(line_index-level+node*2+1);
 		var parentLines = new List<Line>();
-		if (leftParentIndex !=-1){
-			parentLines.Add(lines[leftParentIndex]);
+		if (!(line.left_parent_index == -1)){
+			
+			parentLines.Add(lines[line.left_parent_index]);
 		}
-		if (rightParentIndex !=-1){
-			parentLines.Add(lines[rightParentIndex]);
+		if (line.right_parent_index!=-1){
+			parentLines.Add(lines[line.right_parent_index]);
 		}
 		return parentLines;
 	}

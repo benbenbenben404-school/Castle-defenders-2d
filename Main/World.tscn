@@ -188,7 +188,6 @@ wall_tile_map = NodePath("../Walls")
 current = false
 
 [node name="Node2D" parent="." instance=ExtResource( 5 )]
-visible = false
 
 [node name="Light2D" type="Light2D" parent="."]
 visible = false
