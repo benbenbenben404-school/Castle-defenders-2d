@@ -12,21 +12,35 @@ public class ZombieManager : Node2D
 	Random random = new Random();
 	[Export]
 	private WorldGenLines worldGenLines;
-	public override void _Ready()
-	{
-		for (int i=0; i<10000; i++)
-		createNewZombie();
+	Physics2DShapeQueryParameters wall_query;
+	Physics2DDirectSpaceState space;
+	CircleShape2D shape;
+	public override void _Ready(){		
+		space = GetWorld2d().DirectSpaceState;
+		wall_query = new Physics2DShapeQueryParameters();
+		shape = new CircleShape2D();
+		shape.Radius=48;
+		wall_query.SetShape(shape);
+		wall_query.Transform = new Transform2D(0,new Vector2());
+		wall_query.CollisionLayer = 0b100;
+		
+		for (int i=0; i<1; i++) {
+			createNewZombie();
+		}
+
 	}
 	public override void _PhysicsProcess(float delta) {
-		iterateZombies ();
+		iterateZombies (delta);
 		
 	}
 	
-	public void iterateZombies (){
-		for(int zomb_index =0 ;zomb_index < zombieList.Count; zomb_index++) {
-			zombieList[zomb_index].tick();
-		}
+	public void iterateZombies (float delta){
 		
+		for(int i =0 ;i < zombieList.Count; i++) {
+			zombieList[i].tick(delta);
+
+		}
+	
 	}
 	public void createNewZombie(){
 		var zomb = (Zombie)zombieNodePath.Instance();
@@ -36,6 +50,9 @@ public class ZombieManager : Node2D
 		zomb.line = line;
 		zomb.vel = new Vector2(1,2);
 		zomb.worldGenLines = worldGenLines;
+		zomb.wall_query = wall_query;
+		zomb.space = space ;
+		zomb.shape = shape ;
 
 		zombieList.Add(zomb);
 		((Node2D)zomb).Position = zomb.pos;
