@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/makai-symphony-dragon-slayer.mp3-c073b598fe315699c11574f03fa60fde.mp3str"
+
+[deps]
+
+source_file="res://Sound/makai-symphony-dragon-slayer.mp3"
+dest_files=[ "res://.import/makai-symphony-dragon-slayer.mp3-c073b598fe315699c11574f03fa60fde.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
