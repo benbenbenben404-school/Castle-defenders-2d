@@ -24,7 +24,7 @@ public class ZombieManager : Node2D
 		wall_query.Transform = new Transform2D(0,new Vector2());
 		wall_query.CollisionLayer = 0b100;
 		
-		for (int i=0; i<1; i++) {
+		for (int i=0; i<1000; i++) {
 			createNewZombie();
 		}
 

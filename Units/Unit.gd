@@ -8,10 +8,10 @@ onready var PathGetter = get_node("Character/PathGetter")
 var selected = false
 onready var selectedSprite=$Character/SelectedSprite
 onready var character=$Character
-
+onready var sprite =$Character/Sprite
 func _ready():
 	selectedSprite.hide()
-
+	sprite.frame = rand_range(0,3)
 func _physics_process(delta: float) -> void:
 	if PathGetter.is_path():
 		var dir_to_point = (PathGetter.get_next_point()-global_position).normalized()

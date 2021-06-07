@@ -20,3 +20,484 @@ worldGenLines = ExtResource( 8 )
 world_node = NodePath("../World")
 
 [node name="Unit" parent="UnitManager" instance=ExtResource( 3 )]
+position = Vector2( 3.43945, 32.7826 )
+
+[node name="Unit2" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit3" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit4" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit5" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit6" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit7" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit8" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit9" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit10" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit11" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit12" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit13" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit14" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit15" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit16" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit17" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit18" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit19" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit20" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit21" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit22" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit23" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit24" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit25" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit26" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit27" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit28" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit29" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit30" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit31" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit32" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit33" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit34" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit35" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit36" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit37" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit38" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit39" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit40" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit41" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit42" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit43" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit44" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit45" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit46" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit47" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit48" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit49" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit50" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit51" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit52" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit53" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit54" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit55" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit56" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit57" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit58" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit59" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit60" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit61" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit62" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit63" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit64" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit65" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit66" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit67" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit68" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit69" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit70" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit71" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit72" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit73" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit74" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit75" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit76" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit77" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit78" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit79" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit80" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit81" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit82" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit83" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit84" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit85" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit86" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit87" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit88" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit89" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit90" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit91" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit92" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit93" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit94" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit95" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit96" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit97" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit98" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit99" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit100" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit101" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit102" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit103" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit104" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit105" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit106" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit107" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit108" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit109" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit110" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit111" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit112" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit113" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit114" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit115" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit116" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit117" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit118" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit119" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit120" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit121" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit122" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit123" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit124" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit125" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit126" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit127" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit128" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit129" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit130" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit131" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit132" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit133" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit134" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit135" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit136" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit137" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit138" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit139" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit140" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit141" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit142" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit143" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit144" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit145" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit146" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit147" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit148" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit149" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit150" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit151" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit152" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit153" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit154" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit155" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit156" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit157" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit158" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit159" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit160" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit161" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit162" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit163" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit164" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit165" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit166" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit167" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit168" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit169" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit170" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit171" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit172" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit173" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit174" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit175" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit176" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit177" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit178" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit179" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit180" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit181" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit182" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit183" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit184" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit185" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit186" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit187" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit188" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit189" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit190" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit191" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit192" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit193" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit194" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit195" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit196" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit197" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit198" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit199" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit200" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit201" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit202" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit203" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit204" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit205" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit206" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit207" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit208" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit209" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit210" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit211" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit212" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit213" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit214" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit215" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit216" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit217" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit218" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit219" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit220" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit221" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit222" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit223" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit224" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit225" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit226" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit227" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit228" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit229" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit230" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit231" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit232" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit233" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit234" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit235" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit236" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit237" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit238" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit239" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="Unit240" parent="UnitManager" instance=ExtResource( 3 )]
+
+[node name="YSort" type="YSort" parent="."]
