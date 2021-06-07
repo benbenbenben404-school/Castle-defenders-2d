@@ -60,7 +60,8 @@ public class WorldGenLines:Resource {
 
 	[Export]
 	int node_sepration_horizontal =32;
-
+	
+	
 	int random_factor=200;
 	float connection_threshold=0.7F;
 	float width_mutliplier =7.0F;
@@ -88,7 +89,7 @@ public class WorldGenLines:Resource {
 				if (level == tree_depth) {
 					end_points.Add(new_point);
 				}
-			}		
+			}	
 		}
 
 		foreach (int level in GD.Range(tree_depth-0)){
