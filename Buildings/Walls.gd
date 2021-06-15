@@ -18,8 +18,8 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("left_click"):
-		pass
-		#create_tile(get_global_mouse_position())
+		#pass
+		create_tile(get_global_mouse_position())
 func get_grass_tiles():
 	var grass_map = get_node(grass_tile_map)
 	var grass_tiles_in_map = grass_map.get_used_cells()
